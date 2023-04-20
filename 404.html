@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Not Found</title>
+</head>
+<body>
+  <h1>404 Error: Page Not Found</h1>
+  <p>The page you are looking for cannot be found. Please check the URL and try again.</p>
+  <script>
+    // Set the status code to 404
+    window.onload = function() {
+      window.history.pushState("", "", "/404.html");
+      window.dispatchEvent(new Event('popstate'));
+    };
+  </script>
+</body>
+</html>
